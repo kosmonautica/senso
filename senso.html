@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Die Alarmanlage der Werkstatt der Erfindungen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game">
+        <h1>Die Alarmanlage der Werkstatt der Erfindungen</h1>
+        <div id="target-score">
+            Alarmanlage deaktiviert bei <input type="number" id="target-points" value="5" min="1"> Punkten
+        </div>
+        <div id="score-container">
+            <div id="score">Score: 0 | Highscore: 0</div>
+        </div>
+        <div id="start-hint">Drücke die Leertaste zum Starten</div>
+        <div id="simon-container">
+            <div class="simon-button green" data-key="ArrowUp"><span>↑</span></div>
+            <div class="simon-button blue" data-key="ArrowRight"><span>→</span></div>
+            <div class="simon-button yellow" data-key="ArrowLeft"><span>←</span></div>
+            <div class="simon-button red" data-key="ArrowDown"><span>↓</span></div>
+        </div>
+        <div id="game-over" class="hidden"></div>
+        <div id="success-message" class="hidden">Alarmanlage erfolgreich deaktiviert!</div>
+    </div>
+    <div id="esc-hint">ESC zum Abbrechen</div>
+    <script src="script.js"></script>
+</body>
+</html>
