@@ -25,6 +25,12 @@ const keys = ['ArrowUp', 'ArrowRight', 'ArrowLeft', 'ArrowDown'];
 // Tracking für gedrückte Tasten
 const pressedKeys = new Set();
 
+// Ändere den Default-Wert für targetPoints
+let targetPoints = 20;
+
+// Setze auch den Default-Wert im HTML Input-Feld
+document.getElementById('target-points').value = 20;
+
 function playSound(key) {
     if (sounds[key]) {
         sounds[key].currentTime = 0;
